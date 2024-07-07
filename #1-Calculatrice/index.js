@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentVal += this.textContent;
                 input.value += this.textContent;
             }
-
         });
     });
     
