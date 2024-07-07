@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const decimal = document.querySelector('.decimal');
     let currentVal = '';
 
-    // Ajoutez des écouteurs d'événements pour les boutons
     buttons.forEach(button => {
         button.addEventListener('click', function() {
             console.log('Bouton cliqué:', this.textContent);
