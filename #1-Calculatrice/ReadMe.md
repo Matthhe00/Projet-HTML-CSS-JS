@@ -1,4 +1,4 @@
-# Application [Calculatrice](https://calculatrice-matthhe00.netlify.app/#Portfolio)
+# Application [Calculatrice](https://calculatrice-matthhe00.netlify.app)
 
 Bienvenue sur le fichier README de l'application Calculatrice. Cette application est conçue pour fournir une interface simple et intuitive pour effectuer des calculs de base tels que l'addition, la soustraction, la multiplication et la division.
 
@@ -10,7 +10,7 @@ Bienvenue sur le fichier README de l'application Calculatrice. Cette application
 
 ## Comment l'utiliser ?
 
-Pour utiliser l'application Calculatrice, il vous suffit de vous rendre sur le lien suivant : [Calculatrice](https://calculatrice-matthhe00.netlify.app/#Portfolio)
+Pour utiliser l'application Calculatrice, il vous suffit de vous rendre sur le lien suivant : [Calculatrice](https://calculatrice-matthhe00.netlify.app)
 
 Une fois sur le site, vous pouvez commencer à effectuer des calculs en sélectionnant les chiffres et les opérations désirées.
 
