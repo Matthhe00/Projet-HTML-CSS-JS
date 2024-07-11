@@ -103,7 +103,7 @@ main, header {
     justify-content: center; /* Modifié de space-around à center */
     align-items: center;
     padding: 25px 0;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .convert-choix-liste {
