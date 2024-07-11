@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <link rel="icon" href="images/icon_Convertisseur.png">
+    <script type="module" src="index.js"></script>
+</head>
+<body class="homePage">
+    <header id="header" class="header_contenair">
+        <div class="menu">
+            <h3 class="h3_title">Matthéo</h3>
+            <nav class="header_nav">
+                <ul class="header_navList">
+                    <li class="header_navItem"><a href="https://github.com/Matthhe00">GitHub</a></li>
+                    <li class="header_navItem"><a href="#Portfolio">PortFolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="main_header">
+        <div class="convert-choix-div">
+            <h2 class="h2_title">Convertisseur</h2>
+            <nav class="convert-choix-nav">
+                <ul class="convert-choix-liste">
+                    <button id="longueur" class="convert-bouton">Longueur</button>
+                    <button id="temps" class="convert-bouton">Temps</button>
+                    <button id="masse" class="convert-bouton">Masse</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="convert-section">
+            <div class="convert">
+                <div class="convert-section-1">
+                    <input type="number" class="input-convert" id="input-convert-left">
+                    <select name="unite-1" id="unite-1"></select>
+                </div>
+                <p class="egal-label">=</p>
+                <div class="convert-section-2">
+                    <input type="number" class="input-convert" id="input-convert-right" readonly>
+                    <select name="unite-2" id="unite-2"></select>
+                </div>
+            </div>
+        </div>
+        <div class="github-code">
+            <a href="https://github.com/Matthhe00/Projet-HTML-CSS-JS/tree/main/%231-Convertisseur">Code source</a>
+        </div>
+    </main>
+</body>
+</html>
