@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beatrice', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0d;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, .header_nav, .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, #header, .page_contenair {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* Styles spécifiques */
+.header_contenair, .menu {
+    padding: 20px 0;
+}
+
+.h3_title{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.h3_title:hover::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(243, 202, 20);
+    margin: 10px auto;
+}
+
+.header_navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header_navItem {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(243, 202, 20);
+}
+
+a:hover {
+    background-color: rgb(243, 202, 20);
+    color: #fff;
+}
+
+
+.main_header {
+    padding: 10px 0;
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    box-shadow: 0 2px 5px rgba(243, 202, 20, 0.8);
+}
+
+.info-jeu {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2e33;
+}
+
+.panneau-jeu {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background-color: #2e2e3388
+}
+
+.nourriture {
+    background-color: #ff003d;
+}
+
+.snake-tete  {
+    background-color: rgb(243, 202, 20);
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controles-bouton {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    width: calc(100% / 4);
+    cursor: pointer;
+    background-color: #2e2e33;
+    border-right: 1px solid rgb(102, 84, 6);
+}
+
+.controles-bouton:hover {
+    background-color: #2e2e3388;
+}
+
+.github-code {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    header, #header, .page_contenair {
+        padding: 0 15px;
+    }
+
+    .header_navItem {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .h3_title {
+        font-size: 24px;
+    }
+
+    .header_navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_navItem {
+        margin-bottom: 10px;
+    }
+
+    .wrapper {
+        width: 90vmin;
+        height: 100vmin;
+    }
+
+    .info-jeu {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+}
