@@ -1,4 +1,4 @@
-# Jeu de Snake
+# Jeu de [Snake](https://snake-matthhe00.netlify.app)
 
 Bienvenue sur le fichier README du jeu de Snake. Ce jeu classique consiste à diriger un serpent pour qu'il mange des pommes, grandisse en taille, tout en évitant de se mordre la queue ou de heurter les murs.
 
@@ -11,7 +11,7 @@ Bienvenue sur le fichier README du jeu de Snake. Ce jeu classique consiste à di
 
 ## Comment jouer ?
 
-Pour jouer au jeu de Snake, visitez le lien suivant : [Jeu de Snake](https://snake-game.example.com)
+Pour jouer au jeu de Snake, visitez le lien suivant : [Jeu de Snake](https://snake-matthhe00.netlify.app)
 
 Utilisez les touches fléchées de votre clavier ou les boutons sur l'écran pour diriger le serpent vers les pommes. Le jeu se termine lorsque le serpent se mord la queue ou heurte un mur. Essayez d'obtenir le score le plus élevé possible !
 
