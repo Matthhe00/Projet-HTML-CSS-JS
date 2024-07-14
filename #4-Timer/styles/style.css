@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beatrice', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0d;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, .header_nav, .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, #header, .page_contenair {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* Styles spécifiques */
+.header_contenair, .menu {
+    padding: 20px 0;
+}
+
+.h3_title{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.h3_title:hover::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(243, 202, 20);
+    margin: 1px auto;
+}
+
+.header_navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header_navItem {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(243, 202, 20);
+}
+
+a:hover {
+    background-color: rgb(243, 202, 20);
+    color: #fff;
+}
+
+#timer{
+    margin-top: 80px;
+    font-size: 6rem;
+    font-weight: 600;
+    color: #f3ca14;
+    text-shadow: 2px 2px #927806;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button_timer {
+    padding: 1.5rem 3rem;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    box-shadow: 2px 2px 10px #f3ca14;
+    transition: all 0.2s ease-in-out;
+}
+
+.button_timer:hover {
+    background-color: rgb(243, 202, 20);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.button_timer:disabled {
+    background-color: #f3ca14;
+    color: #fff;
+    cursor: default;
+}
+
+.tour_div {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tour {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px #f3ca14;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.tour:hover {
+    background-color: #d1ae14;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.github-code {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
