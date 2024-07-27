@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget | Matthéo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/icon_budget.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="homePage">
+    <header id="header" class="header_contenair">
+        <div class="menu">
+            <h3 class="h3_title">Matthéo</h3>
+            <nav class="header_nav">
+                <ul class="header_navList">
+                    <li class="header_navItem"><a href="https://github.com/Matthhe00">GitHub</a></li>
+                    <li class="header_navItem"><a href="#Portfolio">PortFolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="input_contenair">
+            <div class="ajouter_argent">
+                <div class="ajouter_titre">
+                    <h2>Budget</h2>
+                </div>
+                <div class="ajouter_input">
+                    <input type="number" id="addArgent_input" class="addArgent" placeholder="Entrez un montant">
+                </div>
+                <div class="ajouter_bouton">
+                    <button class="bouton_ajouter" id="addArgent_bouton">Ajouter au budget</button>
+                </div>
+            </div>
+
+            <div class="addDepense">
+                <div class="depense_titre">
+                    <h2>Dépense</h2>
+                </div>
+                <div class="depense_nom">
+                    <input type="text" id="depense_nom_input" placeholder="Nom de la dépense">
+                </div>
+                <div class="depense_valeur">
+                    <input type="number" id="depense_valeur_input" placeholder="Montant de la dépense">
+                </div>
+                <div class="depense_bouton">
+                    <button class="bouton_depense" id="depense_bouton">Ajouter au depense</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="valArgent flex-space">
+            <div class="totalArgent">
+                <p>Total Budget</p>
+                <span id="argent">
+                    0
+                </span>
+            </div>
+            <div class="totalDepense">
+                <p>Total Dépense</p>
+                <span id="depense">
+                    0
+                </span>
+            </div>
+            <div class="restantArgent">
+                <p>Total Restant</p>
+                <span id="restant">
+                    0
+                </span>
+            </div>
+        </div>
+
+        <div class="list">
+            <h3>Liste Dépense</h3>
+            <div class="list-container" id="list"></div>
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
+
+

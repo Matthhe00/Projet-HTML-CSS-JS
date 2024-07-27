@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beatrice', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0d;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, .header_nav, .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, #header, .page_contenair {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* Styles spécifiques */
+.header_contenair, .menu {
+    padding: 20px 0;
+}
+
+.h3_title{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.h3_title:hover::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #f3ca14;
+    margin: 1px auto;
+}
+
+.header_navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header_navItem {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #f3ca14;
+}
+
+a:hover {
+    background-color: #f3ca14;
+    color: #fff;
+}
+
+.input_contenair {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3em;
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.753m;
+    margin: 1em auto;
+}
+
+.input_contenair h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ajouter_argent, .addDepense {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.2em;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1a1a1d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: 15rem;
+}
+
+input {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+.depense_valeur {
+    margin-top: 1.2em;
+}
+
+.ajouter_bouton, .depense_bouton {
+    margin-top: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #f3ca14;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: rgb(99, 83, 12);
+}
+
+input::placeholder {
+    font-weight: bold;
+}
+
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valArgent {
+    color: #fff;
+    background-color: #1a1a1d;
+    border-radius: 0.8em;
+    box-shadow: 0 0.2em 0.7em #f3ca14;
+    margin: 2em 0;
+    padding: 1.2em;
+    width: 600px;
+}
+
+.valArgent p {
+    font-weight: 700;
+    margin-bottom: 0.6em;
+}
+
+.valArgent span {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+.list {
+    margin-top: 1.2em;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #1a1a1d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+}
+
+.list h3 {
+    margin-bottom: 10px;
+}
+
+.list_content {
+    width: 100%;
+    border-left: 0.3em solid #f3ca14;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.edit, .delete{
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+    header, #header, .page_contenair {
+        padding: 0 15px;
+    }
+
+    .header_navItem {
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .h3_title {
+        font-size: 28px;
+    }
+
+    .header_navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_navItem {
+        margin-bottom: 10px;
+    }
+
+    .input_contenair {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .ajouter_argent, .addDepense {
+        height: 20rem;
+    }
+
+    .valArgent {
+        width: 90%;
+    }
+
+    .list_content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
