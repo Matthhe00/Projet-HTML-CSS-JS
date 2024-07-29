@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    
+    <header id="header" class="header_contenair">
+        <div class="menu">
+            <h3 class="h3_title">Matthéo</h3>
+            <nav class="header_nav">
+                <ul class="header_navList">
+                    <li class="header_navItem"><a href="https://github.com/Matthhe00">GitHub</a></li>
+                    <li class="header_navItem"><a href="#Portfolio">PortFolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Jeu de la vie</h1>
+        <div class="information">
+            <div class="taille">
+                <h3>Taille des cellules</h3>
+                <input type="range" min="20" max="100" class="slider" id="myRange">
+                <div class="tailleTexte">
+                    <p id="taille"></p>
+                </div>
+            </div>
+            <div class="buttonAction">
+                <button id="start" class="button">Start</button>
+                <button id="stop" class="button">Stop</button>
+                <button id="reset" class="button">Reset</button>
+            </div>
+        </div>
+        <div id="tableau" class="tableau" style="width: 100%;"></div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
